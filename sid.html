@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Apple Store - Smart Devices</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00ffd5;
+      margin-bottom: 5px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #cccccc;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #00ffd5;
+    }
+
+    .intro {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .intro h2 {
+      font-size: 2.8rem;
+      color: #00ffd5;
+      margin-bottom: 10px;
+    }
+
+    .intro p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      padding: 50px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      backdrop-filter: blur(12px);
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 255, 255, 0.4);
+    }
+
+    .card img {
+      width: 100%;
+      max-width: 280px;
+      height: 220px;
+      object-fit: contain;
+      border-radius: 15px;
+      margin: 0 auto 20px auto;
+      display: block;
+    }
+
+    .card h3 {
+      color: #00ffd5;
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 1.1rem;
+      color: #ddd;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      color: #00ff99;
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      text-decoration: none;
+      background: #00ffd5;
+      color: #000;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .card a:hover {
+      background: #00c1b3;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      background: rgba(0, 0, 0, 0.4);
+      color: #bbb;
+      font-size: 0.95rem;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      .intro h2 {
+        font-size: 2.2rem;
+      }
+
+      .card h3 {
+        font-size: 1.2rem;
+      }
+
+      .card p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>APPLE STORE</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="intro">
+    <h2>Discover Smart</h2>
+    <p>Explore our flagship products designed for simplicity and performance.</p>
+  </section>
+
+  <section class="products">
+    <div class="card">
+      <img src="https://gadgetsandmoreinc.com/wp-content/uploads/2024/03/63800_apple-iphone-15-plus-256gb-fabrichno-otkliuchen-sin-_2311757896.jpg" alt="iPhone 15">
+      <h3>iPhone 15</h3>
+      <p>8GB RAM | 256GB ROM</p>
+      <p>Snapdragon 8 Gen 2 | AMOLED Display</p>
+      <p class="price">₹69,999</p>
+      <a href="#">View Details</a>
+    </div>
+
+    <div class="card">
+      <img src="https://skinsy.in/wp-content/uploads/2022/03/Apple-iWatch-Series-5.png" alt="iWatch Series 5">
+      <h3>iWatch Series 5</h3>
+      <p>1.4” AMOLED | 100+ Watch Faces</p>
+      <p>Heart Rate | SpO2 | IP68</p>
+      <p class="price">₹45,999</p>
+      <a href="#">View Details</a>
+    </div>
+
+    <div class="card">
+      <img src="https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:450/AWk9VKC457-apple-airpods-pro-2nd-gen-493839243-i-1-1200wx1200h.jpeg" alt="AirPods Pro">
+      <h3>AirPods Pro 2</h3>
+      <p>Deep Bass | ANC | 40mm Drivers</p>
+      <p>15hrs Battery | Bluetooth 5.3</p>
+      <p class="price">₹3,999</p>
+      <a href="#">View Details</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 iPhone Inc. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
